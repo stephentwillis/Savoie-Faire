@@ -1,0 +1,3 @@
+db name: savoie-faire
+un: sfUser
+pw: Revelation214

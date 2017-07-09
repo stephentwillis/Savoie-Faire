@@ -156,3 +156,10 @@ C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\zh-Hant\System.Spati
 C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\obj\Debug\SavoieFaire v2.csprojResolveAssemblyReference.cache
 C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\obj\Debug\SavoieFaire v2.dll
 C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\obj\Debug\SavoieFaire v2.pdb
+C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\SavoieFaire v2.dll.config
+C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\System.Net.Http.Formatting.dll
+C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\System.Web.Http.dll
+C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\System.Web.Http.WebHost.dll
+C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\System.Net.Http.Formatting.xml
+C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\System.Web.Http.xml
+C:\Source Control\Git\Repos\savoie-faire\SavoieFaire v2\bin\System.Web.Http.WebHost.xml
