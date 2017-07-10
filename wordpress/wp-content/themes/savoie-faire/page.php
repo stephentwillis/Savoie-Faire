@@ -48,7 +48,7 @@
 
                                 <?php
                                     $categories = get_the_category(); 
-                                    $cat_name = $categories[0]->cat_name;
+                                    $category = $categories[0]->cat_name;                                    
                                 ?>
                             </article>
                             <!-- end article -->
@@ -56,10 +56,12 @@
                             <?php endif; ?>
 
                             <?php 
-                                $args = array(
-                                    'category' => $cat_name
-                                );
 
+                                $args = array(
+                                    'category_name' => $category,
+                                    'orderby' => 'date'
+                                );
+                               
                                 $posts = get_posts($args);
 
                                 if ($posts) {
@@ -104,7 +106,7 @@
             <!-- HERO -->
             <section id="hero" class="module-hero bg-dark-30 js-fullheight" data-background="<?php bloginfo('template_url') ?>/assets/images/homepage-hero.jpg">
             </section>
-	    <!-- /HERO -->
+	        <!-- /HERO -->
             
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>

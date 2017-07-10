@@ -3,15 +3,9 @@
 
 		    <nav class="navbar navbar-custom font-alt text-light">
 			    <div class="navbar-header">
-				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-					    <span class="sr-only">Toggle navigation</span>
-					    <span class="icon-bar"></span>
-					    <span class="icon-bar"></span>
-					    <span class="icon-bar"></span>
-				    </button>
-		
+				    	
 				    <!-- YOU LOGO HERE -->
-				    <a class="navbar-brand" href="<?php echo get_option('home'); ?>">	
+				    <a class="navbar-brand col-xs-11" href="<?php echo get_option('home'); ?>">	
 						<div class="brand-image col-xs-3 col-md-12">
 						    <img src="<?php bloginfo('template_url'); ?>/assets/images/savoie-logo.png" alt="Savoie Region Crest" />
 						</div>
@@ -35,7 +29,14 @@
 								</g>
 							</svg>
 						</div>
-				    </a>                    
+				    </a>
+
+					<button type="button" class="navbar-toggle col-xs-1" data-toggle="collapse" data-target="#custom-collapse">
+					    <span class="sr-only">Toggle navigation</span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+				    </button>                 
 			    </div>
 
 			    <div class="collapse navbar-collapse" id="custom-collapse">	
@@ -45,14 +46,24 @@
                     <h2 class="counter">
                         .........
                     </h2>
-                    	            
-				    <ul class="nav navbar-nav">
-                        <li><a href="/cheese/" data-translation="The Cheeses" data-original="Les Fromage">Les Fromage</a></li>
-					    <li><a href="/wine/" data-translation="The Wines" data-original="Les Vins">Les Vins</a></li>
-					    <li><a href="/recipes/" data-translation="The Recipes" data-original="Les Recette">Les Recette</a></li>
-					    <li><a href="/heritage/" data-translation="The Heritage" data-original="Le Patrimoine">Le Patrimoine</a></li>
-					    <li><a href="/activities/" data-translation="The Activities" data-original="Les Activities">Les Activities</a></li>						
-				    </ul>
+
+					<ul class="nav navbar-nav">
+						<?php
+							// Lets make the funky dynamic menu translation extensible.
+							$pages = get_pages(array(
+								exclude => 66,
+								sort_column => 'menu_order'
+							));
+
+							foreach($pages as $page) {
+								$url = get_permalink($post = $page->ID);
+								$translation = get_post_meta($page->ID, 'title_translation', true);
+						?>
+						<li id="<?php echo $page->ID ?>"><a href="<?php echo $url ?>" data-translation="<?php echo $translation ?>" data-original="<?php echo $page->post_title ?>"><?php echo $page->post_title ?></a></li>
+						<?php
+							}
+						?>
+					</ul>
 
                     <br />
 

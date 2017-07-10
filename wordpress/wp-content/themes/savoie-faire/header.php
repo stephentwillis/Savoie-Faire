@@ -6,7 +6,7 @@
         <meta name="description" content="">
 	    <meta name="author" content="">
 
-        <title><?php if (is_front_page()) { echo 'Welcome'; } else { wp_title('&laquo;', true, 'right'); } ?> | <?php bloginfo('name'); ?></title>
+        <title><?php if (is_front_page()) { echo 'Welcome'; } else { wp_title('', true, 'right'); } ?> | <?php bloginfo('name'); ?></title>
         
         <!-- Favicons -->
 	    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/images/favicon.png">

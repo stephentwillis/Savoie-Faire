@@ -951,7 +951,7 @@ blockquote cite{
 
 .navbar-custom .navbar-brand{
 	display: inline-table;
-	width: 100%;
+	width: 87%;
 	vertical-align:middle;
 	float:none;
 	height:70px;
@@ -1033,12 +1033,16 @@ blockquote cite{
 		float:none;
 	}
 
+	.navbar-custom .navbar-brand {
+		width: 100%;
+	}
+
 	.navbar-custom .navbar-brand .brand-image {
-		margin-left: 5rem;		
+		margin-left: 7rem;		
 	}
 
 	.navbar-custom .navbar-brand .brand-image img{
-		width: 50%;
+		width: 25%;
 	}
 	
 	.navbar-custom .navbar-brand .brand-title {
@@ -1104,6 +1108,16 @@ blockquote cite{
 		padding-bottom:0;
 	}
 
+	.navbar-custom .navbar-brand .brand-image {		
+		padding: 18px 10px 0 0;
+		margin-left: 2rem;
+	}
+
+	.navbar-custom .navbar-brand .brand-title {
+		padding: 0;
+		margin-left: -4rem;
+	}
+
 }
 
 /*!------------------------------------------------------------------
@@ -1142,6 +1156,7 @@ blockquote cite{
 .hero-subtitle{
 	font-size:16px;
 	margin:0 0 40px;
+	text-shadow: 0 0 20px #000000;
 }
 
 .module-hero h1, .module-hero h2, .module-hero h3, .module-hero h4, .module-hero h5, .module-hero h6{
@@ -1153,6 +1168,7 @@ blockquote cite{
 	letter-spacing:20px;
 	font-weight:300;
 	font-size:54px;
+	text-shadow: 0 0 15px #000000;
 }
 
 .module-hero h2{
